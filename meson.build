@@ -36,7 +36,7 @@ install_data(
 
 pkg                 = import('pkgconfig')
 cz_core_dep         = dependency('cz-core', fallback:['cz-core', 'cz_core_dep'])
-cz_skia_dep         = dependency('cz-skia', fallback:['cz-skia', 'cz_skia_dep'])
+cz_skia_dep         = dependency('cz-skia', fallback:['cz-skia', 'cz_skia_dep'], include_type: 'system')
 cz_srm_dep          = dependency('cz-srm', fallback:['cz-srm', 'cz_srm_dep'])
 cz_ream_dep         = dependency('cz-ream', fallback:['cz-ream', 'cz_ream_dep'])
 wayland_server_dep  = dependency('wayland-server', version: '>= 1.20.0')

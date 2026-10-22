@@ -12,6 +12,7 @@
 #include <EGL/eglext.h>
 #include <sys/epoll.h>
 #include <unordered_map>
+#include <mutex>
 #include <unistd.h>
 #include <filesystem>
 #include <set>
